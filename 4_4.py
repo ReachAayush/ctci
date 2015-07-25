@@ -28,7 +28,7 @@ class LLNode:
 	def __str__(self):
 		return str(self.data)
 
-class LL:
+class LinkedList:
 	def __init__(self, n):
 		newNode = LLNode(n)
 		self.curNode = newNode
@@ -81,7 +81,7 @@ def getLists(tree):
 	ht = len(tree)
 	arr = []
 	for x in xrange(ht):
-		arr.append(LL(None))
+		arr.append(LinkedList(None))
 	getListsHelper(tree, 0, arr)
 	return arr
 
